@@ -1,0 +1,35 @@
+body {
+  font-size: 5vh;
+  background-color: rgb(15, 15, 15);
+  font-family: 'Courier New', Courier, monospace;
+  color: red;
+}
+
+.test {
+  height: 110vh;
+}
+ 
+.text, .line {
+  display: inline;
+}
+
+.line {
+  animation: blink 1s step-end infinite;
+  font-size: 6vh;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+input {
+  opacity: 0;
+  position: absolute;
+  left: -9999px;
+}
+
+.diary {
+  display: none;
+  justify-content: center;
+}
